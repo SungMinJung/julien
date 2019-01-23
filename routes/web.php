@@ -65,6 +65,4 @@ Route::group(['prefix'=>'community','as'=>'community.'],function()
 Route::get("/common",function(){
     return view('story.common');
 });
-Route::get('/home',function(){
-    return view('home');
-});
+Route::get('home2','HomeController@index');

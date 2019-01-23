@@ -103,7 +103,7 @@ label {
 }
 
 .menu .select {
-  color: #000000;
+  color: #000000 !important;
   font-weight: bold;
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
@@ -159,6 +159,7 @@ footer {
 .father {
   background-color: rgba(255, 255, 255, 0.97);
   height: 100px;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .father a {

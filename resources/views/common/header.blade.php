@@ -2,20 +2,26 @@
 <div class="navbar navbar-fixed-top father" style="">
    <div class="container" style="width:1000px;">
        <div class="navbar-header">
-           <a class="navbar-brand" href="#">
+           <a class="navbar-brand" href="home">
            <img src="http://julienwaffle.com/wp-content/uploads/2017/02/logo_animated-1.gif" width="auto" height="70px"></a>
        </div>
        <div id="navbar" class="navbar-collapse collapse">
             <div class="parent">
             <ul class="nav navbar-nav pull-right">
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 브랜드스토리
                             </a>
                             <ul class="dropdown-menu menu-size border-top-red">
-                                <li><a href="#">브랜드 스토리</a></li>
-                                <li><a href="#">대표 인사말</a></li>
-                                <li><a href="#">줄리앙 커피</a></li>
+                                <li><a href="{{route('brand.story')}}">브랜드 스토리</a></li>
+                                <li><a href="{{route('brand.ceo')}}">대표 인사말</a></li>
+                                <li><a href="{{route('brand.kid')}}">꼬마 줄리앙</a></li>
+                                <li><a href="{{route('brand.julien')}}">줄리앙 커피</a></li>
+                                <li><a href="{{route('brand.cofwaf')}}">커피&와플</a></li>
+                                <li><a href="{{route('brand.kims')}}">킴스 와플</a></li>
+                                <li><a href="{{route('brand.direc')}}">찾아오시는 길</a></li>
+
+
                             </ul>
 </li>
 <li class="dropdown">
