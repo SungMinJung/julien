@@ -23,7 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['prefix' => 'brand', 'as' => 'brand.'], function()
 {
     Route::get('story', 'StoryController@index')->name('story');
-    Route::get('ceo', 'StroyController@ceo')->name('ceo');
+    Route::get('ceo', 'StoryController@ceo')->name('ceo');
     Route::get('julien','StoryController@julien')->name('julien');
     Route::get('kid','StoryController@kid')->name('kid');
     Route::get('coffe_and_waffle','StoryController@cofwaf')->name('cofwaf');
