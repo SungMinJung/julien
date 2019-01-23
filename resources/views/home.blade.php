@@ -144,20 +144,49 @@
             </div>
         </div>
 
-        <div class="col-sm-2">
-            <p class="text-center">SMS 창업 지원 신청</p>
-            <form action="">
+        <div class="col-sm-2 padding-init-0">
+            {{-- <form action="">
                 <div class="row">
-                    이름 <input type="text" id="" placeholder="" style="width:50%;" class="pull-right">
+                    <p class="sms_form">이름</p> <input type="text" placeholder="" style="width:50%;" class="pull-right">
                 </div>
                 <div class="row">
-                    전화번호<input type="text" id="" placeholder="" style="width:50%;" class="pull-right">
+                    <p class="sms_form">전화번호</p><input type="text" placeholder="" style="width:50%;" class="pull-right">
                 </div>
                 <div class="row">
-                    문의내용 <input type="text" id="" placeholder="" style="width:50%;" class="pull-right">
+                        <p class="sms_form">문의내용</p> <textarea class="pull-right" style="width:50%;"></textarea>
                 </div>
                 <input type="submit" value="보내기">
-            </form>
+            </form> --}}
+            <table>
+                <thead >
+                    <p class="text-center" style="background-color: #E8DB5F">SMS 창업 지원 신청</p>
+                </thead>
+                <form action="">
+                <tbody>
+                    <tr>
+                        <td><label>이름</label></td>
+                        <td><input type="text" class="sms_form" name="smsName">
+                        <td rowspan="3" style="height:100%;">
+                            <input type="submit" value="보내기" style="height:100px; font-size:7.5pt;"></td>
+                    </tr>
+                    <tr>
+                        <td><label>전화번호</label></td>
+                        <td><input type="text" class="sms_form" name="smsPhone">
+                    </tr>
+                    <tr>
+                        <td><label>문의내용</label></td>
+                        <td><textarea class="sms_form" name="smsContent" placeholder="내용"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <p class="p-inline pull-right"><input type="checkbox">
+                            개인정보 수집 이용 동의
+                            <a herf="">[내용보기]</a></p>
+                        </td>
+                    </tr>
+                </tbody>
+                </form>
+            </table>
         </div>
     </div>
 </div>
