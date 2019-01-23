@@ -1,26 +1,6 @@
-#pop1,#pop2,#pop3{
+.popup{
     position: absolute;
-}
-#pop1{
-    width:500px;
-    height:549px;
-    top:100px;
-    left:100px;
-    z-index:2;
-}
-#pop2{
-    width:670px;
-    height:668px;
-    top:400px;
-    left:500px;
-    z-index:4;
-}
-#pop3{
-    width:551px;
-    height:593px;
-    top:100px;
-    left:800px;
-    z-index:3;
+    z-index:10;
 }
 
 .image {
