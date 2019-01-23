@@ -76,6 +76,10 @@
   padding-top: 60px;
 }
 
+.ex1 img {
+  padding-bottom: 20px;
+}
+
 .menu p {
   /* padding: 3px 3px 4px 0; */
   padding-top: 1px;
@@ -94,7 +98,6 @@
 
 .menu .select {
   color: #000000;
-  margin-top: 30px;
   border-top: 1px solid #e1e1e1;
   border-bottom: 1px solid #e1e1e1;
   padding-top: 7px;
