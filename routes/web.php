@@ -24,3 +24,7 @@ Route::group(['prefix' => 'brand', 'as' => 'brand.'], function()
     Route::get('stroy', 'StroyController@brand')->name('story');
     Route::get('ceo', 'StroyController@brand')->name('ceo');
 });
+
+Route::get("/common",function(){
+    return view('story.common');
+});
