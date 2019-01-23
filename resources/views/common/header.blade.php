@@ -32,7 +32,7 @@
                                 <li><a href="{{route('franchise.competitive')}}"></a></li>
                                 <li><a href="{{route('franchise.join')}}">가맹안내</a></li>
                                 <li><a href="{{route('franchise.cost')}}">투자비용</a></li>
-                                <li><a href="{{route('franchise.guid')}}">가맹문의</a></li>
+                                <li><a href="{{route('franchise.guide')}}">가맹문의</a></li>
                                 <li><a href="{{route('franchise.explain')}}">사업설명회</a></li>
                             </ul>  
                             </li>  
@@ -54,8 +54,8 @@
                             
                             <ul class="dropdown-menu menu-size border-top-red ">
                                 <li><a href="{{route('menu.waffle')}}">와플메뉴</a></li>
-                                <li><a href="{route('menu.coffee')}}">커피메뉴</a></li>
-                                <li><a href="{route('menu.drinking')}}">음료메뉴</a></li>
+                                <li><a href="{{route('menu.coffee')}}">커피메뉴</a></li>
+                                <li><a href="{{route('menu.drinking')}}">음료메뉴</a></li>
                             </ul>
                             </li>
                             <li class="dropdown">

@@ -3,25 +3,7 @@
     .content{
         padding-left: 30px;
     }
-    .kboard-header{
-        float:left;
-        margin:0;
-        width:100%;
-    }
-    .kboard-search{
-        float:left;
-        padding-bottom: 5px;
-        width: 50px;
-        text-align:left;
-    }
-    .keyword{
-        border: 1px solid #cccccc
-        border-color:#e1e1e1;
-        border-radius: 3px;
-        background-color:#fcfcfc;
-        color: #919191;
-        width: 246px;
-    }
+
     .searchSubmit{
         background:#4A4A4A;
         border-radius: 5px;
@@ -35,21 +17,21 @@
         /* margin-top: 50px; */
         padding-top:150px;
     }
-    #customers {
+    #notice {
         font-size:12px;
   width: 100%;
   text-align:center;
 }
 
-#customers td, #customers th {
+#notice td, #notice th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
 
-#customers tr:hover {background-color: #ddd;}
+#notice tr:hover {background-color: #ddd;}
 
-#customers th {
+#notice th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
@@ -58,9 +40,13 @@
   /* color: black; */
 }
 #number{
-    width:3%;
+    width:5%;
   text-align:center;
 
+}
+#notice  td {
+border-left: none;
+border-right: none;
 }
 </style>
 @section('inner')
@@ -76,7 +62,7 @@
             </div>
 
 
-<table id="customers">
+<table id="notice">
   <tr>
     <th id="number">번호</th>
     <th>제목</th>
@@ -85,14 +71,18 @@
     <th>조회</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>78</td>
+    <td>줄리앙와플 준가맹점</td>
+    <td>관리자</td>
+    <td>2017년 02월 28일	</td>
+    <td>639</td>
   </tr>
   <tr>
-    <td>Berglunds snabbköp</td>
-    <td>Christina Berglund</td>
-    <td>Sweden</td>
+    <td>77</td>
+    <td>하나멤버스ｘ줄리앙와플　제휴이벤트　</td>
+    <td>관리자</td>
+    <td>2017년 01월 03일</td>
+    <td>503</td>
   </tr>
 </table>
 

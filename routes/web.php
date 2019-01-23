@@ -36,7 +36,7 @@ Route::group(['prefix'=>'franchise','as'=>'franchise.'], function()
     Route::get('competitive','FranchiseController@competitive')->name('competitive');
     Route::get('join','FranchiseController@join')->name('join');
     Route::get('cost','FranchiseController@cost')->name('cost');
-    Route::get('guid','FranchiseController@guid')->name('guid');
+    Route::get('guide','FranchiseController@guide')->name('guide');
     Route::get('explain','FranchiseController@explain')->name('explain');
 
 });

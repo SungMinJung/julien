@@ -16,8 +16,8 @@ class FranchiseController extends Controller
     public function cost(){
         return view('franchise.cost');
     }
-    public function guid(){
-        return view('franchise.guid');
+    public function guide(){
+        return view('franchise.guide');
     }
     public function explain(){
         return view('franchise.explain');
