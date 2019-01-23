@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="row">
+<div class="row margin-header">
     <div class="col-sm-12">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
             <ol class="carousel-indicators">
@@ -24,7 +24,7 @@
 
 @include('popup');
 
-<div class="container" style="width:1000px;">
+<div class="container margin-footer" style="width:1000px;">
     <!-- 첫번째 라인 -->
     <div class="row" style="margin-top:2%;">
         <div class="col-sm-4">
