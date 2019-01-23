@@ -1,11 +1,13 @@
 @extends('story.common')
 
 @section('inner')
-test
-@endsection
+
+
 
 <style>
-
+#ex1-content{
+    padding-top:80px;
+}
 .text-center>p
 {
     margin-top:5%;
@@ -48,11 +50,11 @@ a:hover
 }
 
 </style>
-
-<div class="container">
+<div id="ex1-content"><
     <div class="col-sm-9 border-left" style="margin-top:5%;">
-        <div class="row" style="padding:6px;">
+        <div class="row" style="padding:10px;">
             <div class="col-sm-7" style="font-size:13px; color:#666666">
+            <img src="http://julienwaffle.com/wp-content/uploads/2016/05/up1.png" alt="">
                 <h4><p><strong>대한민국 No.1</p>
                 <p>벨기에 전통 수제와플 전문점</strong></p></h4><br>
                 <strong>
@@ -76,8 +78,8 @@ a:hover
                 </p>
                 </strong>
             </div>
-            <div class="col-md-5 text-center">
-                <img src="http://julienwaffle.com/wp-content/uploads/2016/05/Group-23-1.png" style="margin-top:5%;margin-left:20%">
+            <div class="col-md-5 text-center" style="padding-top:150px;">
+                <img src="http://julienwaffle.com/wp-content/uploads/2016/05/Group-23-1.png">
                 <div style="height:70px" class="hr hr-invisible  avia-builder-el-7  el_after_av_image  el_before_av_image  ">
                     <span class="hr-inner "><span class="hr-inner-style"></span></span></div>
                 <img src="http://julienwaffle.com/wp-content/uploads/2016/05/brand-1-1-300x300.jpg" style="width:100%;height:auto;margin-left:25%;margin-bottom:20px;max-width:300px;float:right;">
@@ -97,3 +99,4 @@ a:hover
         </div>
     </div>
 </div>
+    @endsection
