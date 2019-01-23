@@ -19,9 +19,10 @@
                     <p class="menu-p"><a href="{{route('brand.direc')}}">찾아오시는 길</a></p>
                 </div>
 
-            </div>
-            </div>
-            
+            </div> 
+
+</div>
+
         <div class="col-sm-10">
             <div class="row">
                  @yield('inner')
