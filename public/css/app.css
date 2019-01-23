@@ -107,6 +107,7 @@ label {
   padding-bottom: 7px;
 }
 
+<<<<<<< HEAD
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -150,5 +151,38 @@ footer {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
   }
+=======
+.father {
+  background-color: rgba(255, 255, 255, 0.97);
+  height: 100px;
+}
+
+.father a {
+  color: #000;
+}
+
+.parent {
+  position: relative;
+  top: 30px;
+  height: 88px;
+  font-size: 13px;
+  font-family: "entypo-fontello";
+  font-weight: bold;
+  float: right;
+  padding: -20px 8px 15px 25px;
+}
+
+.border-top-red {
+  border-top: 1px solid red;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.navb
+.menu-size {
+  width: 180px;
+>>>>>>> dongwook
 }
 
