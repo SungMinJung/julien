@@ -24,7 +24,7 @@
             
         <div class="col-sm-10">
             <div class="row">
-            @yield('inner')
+                 @yield('inner')
             </div>
 
         </div>
