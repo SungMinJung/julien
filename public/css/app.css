@@ -191,3 +191,37 @@ footer {
   width: 180px;
 }
 
+#googleMap {
+  width: 100%;
+  height: 400px;
+  max-width: 750px;
+}
+
+#googleMap2 {
+  width: 100%;
+  height: 400px;
+  max-width: 750px;
+}
+
+#ex1-content {
+  padding-top: 80px;
+}
+
+.head img {
+  width: 100%;
+  height: auto;
+  max-width: 750px;
+  min-width: 475px;
+}
+
+.title {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.content {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
