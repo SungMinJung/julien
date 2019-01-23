@@ -2,7 +2,7 @@
 <div class="navbar navbar-fixed-top father" style="">
    <div class="container" style="width:1000px;">
        <div class="navbar-header">
-           <a class="navbar-brand" href="home">
+           <a class="navbar-brand" href="{{route('home')}}">
            <img src="http://julienwaffle.com/wp-content/uploads/2017/02/logo_animated-1.gif" width="auto" height="70px"></a>
        </div>
        <div id="navbar" class="navbar-collapse collapse">
