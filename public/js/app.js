@@ -34522,8 +34522,8 @@ $(document).ready(function () {
     $('.popup').each(function (index) {
         $(this).css('left', left);
         $(this).css('top', top);
-        left += 100;
-        top += 100;
+        left += 50;
+        top += 50;
     });
 
     $('.popup_delete').on("click", function () {
