@@ -22,6 +22,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::group(['prefix' => 'brand', 'as' => 'brand.'], function()
 {
-    Route::get('stroy', 'StroyController@brand')->name('story');
+    Route::get('story', 'StoryController@brand')->name('story');
     Route::get('ceo', 'StroyController@brand')->name('ceo');
 });
