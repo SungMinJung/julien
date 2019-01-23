@@ -1,28 +1,31 @@
-#pop1,#pop2,#pop3{
+.margin-header{
+    margin-top:100px;
+}
+.margin-footer{
+    margin-bottom:50px;
+}
+.popup{
     position: absolute;
+    z-index:10;
 }
-#pop1{
-    width:500px;
-    height:549px;
-    top:100px;
-    left:100px;
-    z-index:2;
+.popup_delete{
+    position: absolute;
+    top:0;
+    right:0;
 }
-#pop2{
-    width:670px;
-    height:668px;
-    top:400px;
-    left:500px;
-    z-index:4;
+.padding-init-0{
+    padding:0;
 }
-#pop3{
-    width:551px;
-    height:593px;
-    top:100px;
-    left:800px;
-    z-index:3;
+label{
+    width:40px;
+    font-size: 7.5pt;
 }
-
+.p-inline{
+    font-size:7pt;
+}
+.sms_form{
+    width:80px;
+}
 .image {
     opacity: 1;
     display: block;

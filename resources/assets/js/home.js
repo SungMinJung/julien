@@ -1,14 +1,14 @@
-var pop1 = document.getElementById('pop1')
-var pop2 = document.getElementById('pop2')
-var pop3 = document.getElementById('pop3')
+$(document).ready(function(){
+    var left = 200;
+    var top = 200;
+    $('.popup').each(function(index){
+        $(this).css('left',left);
+        $(this).css('top',top);
+        left+=50;
+        top+=50;
+    })
 
-
-function pop1_del(){
-    pop1.style.display="none";
-}
-function pop2_del(){
-    pop2.style.display = "none";
-}
-function pop3_del(){
-    pop3.style.display = "none";
-}
+    $('.popup_delete').on("click",function(){
+        $(this).parents('div.popup').fadeOut();
+    })
+})
