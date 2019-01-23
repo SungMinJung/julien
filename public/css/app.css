@@ -70,7 +70,6 @@
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
-<<<<<<< HEAD
 .ex1 {
   height: 100%;
   border-right: 1px solid #e1e1e1;
@@ -100,7 +99,8 @@
   border-bottom: 1px solid #e1e1e1;
   padding-top: 7px;
   padding-bottom: 7px;
-=======
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -144,6 +144,5 @@ footer {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
   }
->>>>>>> woals
 }
 
