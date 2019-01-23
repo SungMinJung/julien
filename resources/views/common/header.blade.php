@@ -1,4 +1,3 @@
-
 <div class="navbar navbar-fixed-top father" style="">
    <div class="container" style="width:1000px;">
        <div class="navbar-header">
@@ -16,9 +15,13 @@
                                 <li><a href="#">브랜드 스토리</a></li>
                                 <li><a href="#">대표 인사말</a></li>
                                 <li><a href="#">줄리앙 커피</a></li>
+                                <li><a href="#">꼬마줄리앙</a></li>
+                                <li><a href="#">커피&와플</a></li>
+                                <li><a href="#">킴스와플</a></li>
+                                <li><a href="#">찾아오시는길</a></li>
                             </ul>
-</li>
-<li class="dropdown">
+                            </li>
+                            <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 프렌차이즈
                             </a>
@@ -27,9 +30,11 @@
                                 <li><a href="#">성공창업 경쟁력</a></li>
                                 <li><a href="#">가맹안내</a></li>
                                 <li><a href="#">투자비용</a></li>
+                                <li><a href="#">가맹문의</a></li>
+                                <li><a href="#">사업설명회</a></li>
                             </ul>  
-</li>  
-<li class="dropdown">
+                            </li>  
+                            <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 매장
                             </a>
@@ -39,8 +44,8 @@
                                 <li><a href="#">최근 오픈 매장</a></li>
                                 <li><a href="#">매장 찾기</a></li>
                             </ul>
-</li>
-<li class="dropdown">
+                            </li>
+                            <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 메뉴
                             </a>
@@ -50,8 +55,8 @@
                                 <li><a href="#">커피메뉴</a></li>
                                 <li><a href="#">음료메뉴</a></li>
                             </ul>
-</li>
-<li class="dropdown">
+                            </li>
+                            <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 커뮤니티
                                 </a>
