@@ -1,3 +1,5 @@
+import { runInContext } from "vm";
+
 $(document).ready(function(){
     var left = 200;
     var top = 200;
@@ -13,13 +15,18 @@ $(document).ready(function(){
     })
 
     $('#korea div p').each(function(index,elem){
-        console.log(elem)
+
         $(elem).mouseover(function(){
             $(elem).siblings('img').css('opacity','1');
-            console.log(index);
+
         })
         $(elem).mouseleave(function(){
             $(elem).siblings('img').css('opacity','0');
         })
+
+        // $(elem).click(function(){
+            
+        //     console.log(index);
+        // })
     })
 })

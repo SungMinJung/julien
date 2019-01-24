@@ -42,6 +42,7 @@ Route::group(['prefix'=>'store','as'=>'store.'],function()
     Route::get('success','StoreController@success')->name('success');
     Route::get('recent','StoreController@recent')->name('recent');
     Route::get('find','StoreController@find')->name('find');
+    Route::get('finding/{area}','StoreController@finding')->name('finding');
 
 });
 Route::group(['prefix'=>'menu','as'=>'menu.'],function()
