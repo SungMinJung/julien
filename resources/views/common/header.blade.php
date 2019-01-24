@@ -64,9 +64,9 @@
                                 </a>
                             
                             <ul class="dropdown-menu menu-size border-top-red">
-                                <li><a href="{{route('community.notice')}}">공지사항</a></li>
-                                <li><a href="{{route('community.news')}}">News</a></li>
-                                <li><a href="{{route('community.gallery')}}">갤러리</a></li>
+                                <li><a href="{{route('community.type', ['type' => 'notice'])}}">공지사항</a></li>
+                                <li><a href="{{route('community.type', ['type' => 'news'])}}">News</a></li>
+                                <li><a href="{{route('community.type', ['type' => 'gallery'])}}">갤러리</a></li>
                             </ul>
                         </li>
                         <!-- 지워도됨 -->

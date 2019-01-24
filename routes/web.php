@@ -53,12 +53,9 @@ Route::group(['prefix'=>'menu','as'=>'menu.'],function()
 });
 Route::group(['prefix'=>'community','as'=>'community.'],function()
 {
-    Route::get('notice','CommunityController@notice')->name('notice');
-    Route::get('news','CommunityController@news')->name('news');
-    Route::get('gallery','CommunityController@gallery')->name('gallery');
     // 임시
-    // Route::resource('test', 'DocumentController');
     Route::get('{type}', 'DocumentController@index')->name('type');
+    // Route::resource('test', 'DocumentController');
     // Route::get('test.admin', 'DocumentController')->name('community.admin');
     // Route::get('test.admin{id}', 'DocumentController')->name('community.admin.show');
 

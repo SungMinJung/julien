@@ -16,10 +16,20 @@ class DocumentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($type)
     {
-        $documents = Document::all();
-        $documents = DB::table('documents')->orderBy('id', 'desc')->paginate(10);
+        if ($type == 'notice') {
+            $documents = Document::all();
+            $documents = DB::table('documents')->where('type', '공지사항')->orderBy('id', 'desc')->paginate(10);
+        }
+        if ($type == 'news') {
+            $documents = Document::all();
+            $documents = DB::table('documents')->where('type', 'news')->orderBy('id', 'desc')->paginate(10);
+        }
+        if ($type == 'gallery') {
+            $documents = Document::all();
+            $documents = DB::table('documents')->where('type', '갤러리')->orderBy('id', 'desc')->paginate(10);
+        }
 
         return view('community.index', compact('documents'));
     }
