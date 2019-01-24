@@ -76,7 +76,7 @@
    //     zoom:16,
    //     mapTypeId:google.maps.MapTypeId.ROADMAP
    // };
-
+  
    var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
    var map2=new google.maps.Map(document.getElementById("googleMap2"),mapProp2);
    // var map3=new google.maps.Map(document.getElementById("googleMap3"),mapProp3);
