@@ -1,8 +1,12 @@
 @extends('store.common')
 
 @section('inner')
-    <div class="row">
+    <div class="col-md-12" style="background-color: #eee;">
         <div class="col-md-6">
+            <div class="col-md-12">
+                <h2><p><b>줄리앙 매장</b></p></h2>
+                <p><b>오픈 매장</b></p>
+            </div>
         </div>
         
         <div class="col-md-6">
