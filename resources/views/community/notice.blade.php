@@ -18,6 +18,7 @@
         padding-top:150px;
     }
     #notice {
+      border: 2px solid #979797;
         font-size:12px;
   width: 100%;
   text-align:center;
@@ -32,21 +33,41 @@
 #notice tr:hover {background-color: #ddd;}
 
 #notice th {
+  text-align:center;
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
   border-top:3px solid #F1D0AD;
   background-color: #F9F3B9;
+  border-left:  1px solid #979797;
+border-right:  1px solid #979797;
+border-bottom:  1px solid #979797;
+
   /* color: black; */
 }
 #number{
-    width:5%;
+    width:12%;
   text-align:center;
 
 }
 #notice  td {
 border-left: none;
 border-right: none;
+border-top:  1px solid #979797;
+border-bottom:  1px solid #979797;
+
+}
+#subject{
+  width: 35%;
+
+}
+#writer{
+width: 18%;
+}
+#date{
+
+}
+#cnt{
+width: 12%;
 }
 </style>
 @section('inner')
@@ -57,22 +78,21 @@ border-right: none;
                 
                 <input type="text" size="30">
                 <button type="submit" class="searchSubmit">검색</button>
-
-            </div>
+            </div><br>
             </div>
 
 
 <table id="notice">
   <tr>
     <th id="number">번호</th>
-    <th>제목</th>
-    <th>글쓴이</th>
-    <th>날짜</th>
-    <th>조회</th>
+    <th id="subject">제목</th>
+    <th id="writer">글쓴이</th>
+    <th id="date">날짜</th>
+    <th id="cnt">조회</th>
   </tr>
   <tr>
     <td>78</td>
-    <td>줄리앙와플 준가맹점</td>
+    <td><a href="/commu/show58"> 줄리앙와플 준가맹점</a></td>
     <td>관리자</td>
     <td>2017년 02월 28일	</td>
     <td>639</td>

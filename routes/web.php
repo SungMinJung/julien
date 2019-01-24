@@ -59,6 +59,7 @@ Route::group(['prefix'=>'community','as'=>'community.'],function()
 
 });
 
-Route::get("/common",function(){
-    return view('story.common');
+
+Route::get('/commu/show58',function(){
+    return view('community.show58');
 });
