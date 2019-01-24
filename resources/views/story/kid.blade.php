@@ -1,5 +1,92 @@
 @extends('story.common')
 
+
+    <style>
+        .text-center>p{
+            margin-top:5%;
+        }
+        .border-left{
+            border-left:1px solid lightgray;
+        }
+        .tag{
+            border-top:1px solid lightgray;
+            border-bottom:1px solid lightgray;
+            background-color: #eee;
+        }
+        /* a{
+            color:#000;
+        } */
+        #subject{
+            padding-top: 40px;
+            font-size: 19px;
+        }
+
+        a:hover{
+            color:#f00;
+        }
+        .menu-p{
+            padding:2% 0% 2% 0%;
+        }
+        .zoom {
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transition: all 0.3s ease-in-out;
+            width:100%;
+         
+        }
+        .zoom:hover {
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+        }
+        .imgbox{
+            
+            margin-bottom:5%;
+            overflow: hidden;
+        }
+
+        #popup{
+            position: fixed;
+            z-index:1000;
+            display:none;
+            width:100%;
+            height:100%;
+            transition: all 0.3s ease-in-out;
+        }
+        #popimg{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+
+    <script>
+
+        function popup_show(imgurl){
+            $("#popimg").attr("src", imgurl);
+            $("#popup").css("background-color","rgba( 000, 000, 000, 0.5 )");
+            $("#popup").css("display","block");
+        }
+        
+        function popup_del(){
+            $("#popup").css("background-color","#fff");
+            $("#popup").css("display","none");
+        
+        }
+
+    </script>
+    
+
+
+
+
+
 @section('inner')
 <style>
 #ex1-content{
