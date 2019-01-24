@@ -15,7 +15,7 @@
                     <p class="menu-p "><a href="{{route('brand.kid')}}">꼬마 줄리앙</a></p>
                     <p class="menu-p"><a href="{{route('brand.julien')}}">줄리앙 커피</a></p>
                     <p class="menu-p"><a href="{{route('brand.cofwaf')}}">커피&와플</a></p>
-                    <p class="menu-p tag"><a href="{{route('brand.kims')}}">킴스 와플</a></p>
+                    <p class="menu-p "><a href="{{route('brand.kims')}}">킴스 와플</a></p>
                     <p class="menu-p"><a href="{{route('brand.direc')}}">찾아오시는 길</a></p>
                 </div>
 
