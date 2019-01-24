@@ -4,9 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Document;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Http\Traits\UploadTrait;
 
 class DocumentController extends Controller
 {
+    use UploadTrait;
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +18,10 @@ class DocumentController extends Controller
      */
     public function index()
     {
-        //
+        $documents = Document::all();
+        $documents = DB::table('documents')->orderBy('id', 'desc')->paginate(10);
+
+        return view('community.index', compact('documents'));
     }
 
     /**
@@ -24,7 +31,7 @@ class DocumentController extends Controller
      */
     public function create()
     {
-        //
+        return view('community.create');
     }
 
     /**
@@ -35,7 +42,25 @@ class DocumentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'type' => 'required',
+            'title' => 'required',
+            'content' => 'required',
+            'main_image' => 'required',
+        ]);
+
+        $document = new Document([
+            'type' => $request->get('type'),
+            'title' => $request->get('title'),
+            'content' => $request->get('content'),
+            'main_image' => $request->get('main_image'),
+        ]);
+        
+        $url = $this->uploadFile($request, 'main_image');
+        $document->main_image = $url;
+        $document->save();
+
+        return redirect()->route('community.test.index');
     }
 
     /**
@@ -44,9 +69,14 @@ class DocumentController extends Controller
      * @param  \App\Document  $document
      * @return \Illuminate\Http\Response
      */
-    public function show(Document $document)
+    public function show(Document $document, $id)
     {
-        //
+        $document = Document::find($id);
+        
+        $document->view_count ++;
+        $document->save();
+
+        return view('community.show', compact('document'));
     }
 
     /**
@@ -78,8 +108,16 @@ class DocumentController extends Controller
      * @param  \App\Document  $document
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Document $document)
+    public function destroy(Document $document, $id)
     {
-        //
+        $document = Document::find($id);
+        $document->delete();
+
+        return dirirect()->route('community.test.index');
+    }
+
+    public function admin()
+    {
+        return view('community.admin');
     }
 }
