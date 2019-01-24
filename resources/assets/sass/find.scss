@@ -243,3 +243,17 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
+
+// 매장 성공 스토리 ㅎㅎ
+*{
+    border: 1px solid red;
+}
+
+.inline_div{
+    div{
+        display: inline;
+        font-size: 16pt;
+        color:#666666;
+
+    }
+}
