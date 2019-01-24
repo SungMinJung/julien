@@ -78,12 +78,6 @@ width: 12%;
                 
                 <input type="text" size="30">
                 <button type="submit" class="searchSubmit">검색</button>
-
-            글작성
-    </button>
-
-
-
             </div><br>
             </div>
 
@@ -98,7 +92,7 @@ width: 12%;
   </tr>
   <tr>
     <td>78</td>
-    <td><a href="community/show58"> 줄리앙와플 준가맹점</a></td>
+    <td><a href="/commu/show58"> 줄리앙와플 준가맹점</a></td>
     <td>관리자</td>
     <td>2017년 02월 28일	</td>
     <td>639</td>
