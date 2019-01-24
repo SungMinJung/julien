@@ -1,7 +1,7 @@
 <div class="navbar navbar-fixed-top father" style="">
    <div class="container" style="width:1000px;">
        <div class="navbar-header">
-           <a class="navbar-brand" href="home">
+           <a class="navbar-brand" href="/home">
            <img src="http://julienwaffle.com/wp-content/uploads/2017/02/logo_animated-1.gif" width="auto" height="70px"></a>
        </div>
        <div id="navbar" class="navbar-collapse collapse">
@@ -64,9 +64,9 @@
                                 </a>
                             
                             <ul class="dropdown-menu menu-size border-top-red">
-                                <li><a href="{{route('community.type', ['type' => 'notice'])}}">공지사항</a></li>
-                                <li><a href="{{route('community.type', ['type' => 'news'])}}">News</a></li>
-                                <li><a href="{{route('community.type', ['type' => 'gallery'])}}">갤러리</a></li>
+                                <li><a href="{{route('community.index', ['type' => 'notice'])}}">공지사항</a></li>
+                                <li><a href="{{route('community.index', ['type' => 'news'])}}">News</a></li>
+                                <li><a href="{{route('community.index', ['type' => 'gallery'])}}">갤러리</a></li>
                             </ul>
                         </li>
                         <!-- 지워도됨 -->

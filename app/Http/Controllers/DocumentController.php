@@ -24,17 +24,20 @@ class DocumentController extends Controller
 
         if ($type == 'notice') {
             $query = $query->where('type', '공지사항');
+            $imgUrl = "http://julienwaffle.com/wp-content/uploads/2016/05/up17-1.png";
         }
         if ($type == 'news') {
             $query = $query->where('type', 'news');
+            $imgUrl = "http://julienwaffle.com/wp-content/uploads/2016/05/KakaoTalk_Photo_2016-05-26-15-43-56_33.png";
         }
         if ($type == 'gallery') {
             $viewName = 'community.gallery';
             $query = $query->where('type', '갤러리');
+            $imgUrl = "http://julienwaffle.com/wp-content/uploads/2016/05/up18.png";
         }
         $documents = $query->paginate(10);
 
-        return view($viewName, compact('documents'));
+        return view($viewName, compact('documents', 'imgUrl'));
     }
 
     /**
@@ -73,7 +76,7 @@ class DocumentController extends Controller
         $document->main_image = $url;
         $document->save();
 
-        return redirect()->route('community.test.index');
+        return redirect()->route('community.index');
     }
 
     /**
@@ -82,7 +85,7 @@ class DocumentController extends Controller
      * @param  \App\Document  $document
      * @return \Illuminate\Http\Response
      */
-    public function show(Document $document, $id)
+    public function show(Document $document, $type, $id)
     {
         $document = Document::find($id);
         
@@ -98,9 +101,11 @@ class DocumentController extends Controller
      * @param  \App\Document  $document
      * @return \Illuminate\Http\Response
      */
-    public function edit(Document $document)
+    public function edit(Document $document, $id)
     {
-        //
+        $document = Document::find($id);
+
+        return view('community.edit', compact('document'));
     }
 
     /**
@@ -110,9 +115,21 @@ class DocumentController extends Controller
      * @param  \App\Document  $document
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Document $document)
+    public function update(Request $request, Document $document, $id)
     {
-        //
+        $document = Document::find($id);
+
+        $request->validate([
+            'type' => 'required',
+            'title' => 'required',
+            'content' => 'required',
+            'main_image' => 'required',
+        ]);
+
+        $document = new Document;
+        $document->type = $request->get('type');
+
+        return redirect()->route('community.admin');
     }
 
     /**
@@ -126,11 +143,21 @@ class DocumentController extends Controller
         $document = Document::find($id);
         $document->delete();
 
-        return dirirect()->route('community.test.index');
+        return redirect()->route('docu.admin');
     }
 
-    public function admin()
+    public function admin(Document $document)
     {
-        return view('community.admin');
+        $documents = Document::all();
+        // $documents = DB::table('documents')->orderBy('id', 'desc')->paginate(20);
+
+        return view('community.admin', compact('documents'));
+    }
+
+    public function adshow($id)
+    {
+        $document = Document::find($id);
+
+        return view('community.adshow', compact('document'));
     }
 }

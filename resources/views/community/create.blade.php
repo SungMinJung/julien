@@ -1,6 +1,4 @@
-
-
-<form action="{{ route('community.test.store') }}" method="post" enctype="multipart/form-data">
+<form action="{{ route('community.store') }}" method="post" enctype="multipart/form-data">
     @csrf
     종류 : 
         <select name="type">

@@ -99,7 +99,7 @@
     {{ $document->content }}
     </div>
 
-    <a href="{{ route('community.test.index') }}" class="btn btn-default">목록보기</a>
+    <a href="{{ route('docu.admin', $document->type) }}" class="btn btn-default">목록보기</a>
 
 </div>
 @endsection

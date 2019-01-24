@@ -1,4 +1,4 @@
-@extends('story.common')
+@extends('franchise.common')
 
 @section('inner')
 

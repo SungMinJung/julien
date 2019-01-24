@@ -95,7 +95,7 @@ function popup_del(){
 
 @section('inner')
 <div class="content">
-    <img id="first" src="http://julienwaffle.com/wp-content/uploads/2016/05/up18.png" alt="">
+    <img id="first" src="{{ $imgUrl }}" alt="">
 
     <div class="gallery1" id="horizen">
         <div class="row1" id="hori1">

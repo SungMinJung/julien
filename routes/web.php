@@ -54,13 +54,18 @@ Route::group(['prefix'=>'menu','as'=>'menu.'],function()
 });
 Route::group(['prefix'=>'community','as'=>'community.'],function()
 {
-    // 임시
-    Route::get('{type}', 'DocumentController@index')->name('type');
-    // Route::resource('test', 'DocumentController');
-    // Route::get('test.admin', 'DocumentController')->name('community.admin');
-    // Route::get('test.admin{id}', 'DocumentController')->name('community.admin.show');
-
+    Route::get('{type}', 'DocumentController@index')->name('index');
+    Route::get('{type}/{id}', 'DocumentController@show')->name('show');
+    
 });
+// 커뮤니티어드민
+Route::get('/admin', 'DocumentController@admin')->name('docu.admin');
+Route::get('/admin/create', 'DocumentController@create')->name('docu.create');
+Route::post('/admin', 'DocumentController@store')->name('docu.store');
+Route::get('/admin/{id}', 'DocumentController@adshow')->name('docu.adshow');
+Route::get('/admin/{id}/edit', 'DocumentController@edit')->name('docu.edit');
+Route::put('/admin/{id}', 'DocumentController@update')->name('docu.update');
+Route::delete('/admin/{id}', 'DocumentController@destroy')->name('docu.destroy');
 
 
 Route::get('/commu/show58',function(){

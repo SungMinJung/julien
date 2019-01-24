@@ -71,7 +71,7 @@ width: 12%;
 </style>
 @section('inner')
             <div class="content">
-            <img id="img" src="http://julienwaffle.com/wp-content/uploads/2016/05/up17-1.png" alt="">
+            <img id="img" src="{{ $imgUrl }}" alt="">
             <div class="row">
             <div class="col-sm-6">
                 
@@ -92,7 +92,7 @@ width: 12%;
   @foreach ($documents as $document)
   <tr>
     <td>{{ $document->id }}</td>
-    {{-- <td><a href="{{ route('community.test.show', $document->id) }}">{{ $document->title }}</a></td> --}}
+    <td><a href="{{ route('community.show', ['type' => $document->type, 'id' => $document->id]) }}">{{ $document->title }}</a></td>
     <td>{{ $document->user_id }}</td>
     <td>{{ date("Y년 m월 d일", strtotime($document->created_at)) }}</td>
     <td>{{ $document->view_count }}</td>
