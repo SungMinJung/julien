@@ -14,11 +14,10 @@
                     <p class="menu-p"><a href="{{route('store.recent')}}">최근 오픈 매장</a></p>
                     <p class="menu-p "><a href="{{route('store.find')}}">전국 매장</a></p>
                 </div>
-
             </div>
-            </div>
+        </div>
             
-        <div class="col-sm-10">
+        <div class="col-sm-10 ex1">
             <div class="row">
                  @yield('inner')
             </div>
