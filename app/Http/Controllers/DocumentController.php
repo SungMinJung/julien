@@ -27,8 +27,9 @@ class DocumentController extends Controller
             $documents = DB::table('documents')->where('type', 'news')->orderBy('id', 'desc')->paginate(10);
         }
         if ($type == 'gallery') {
-            $documents = Document::all();
-            $documents = DB::table('documents')->where('type', '갤러리')->orderBy('id', 'desc')->paginate(10);
+            // $documents = Document::all();
+            // $documents = DB::table('documents')->where('type', '갤러리')->orderBy('id', 'desc')->paginate(10);
+            return view('community.gallery');
         }
 
         return view('community.index', compact('documents'));
