@@ -18,21 +18,23 @@ class DocumentController extends Controller
      */
     public function index($type)
     {
+        $query = Document::orderBy('id', 'desc');
+
+        $viewName = 'community.index';
+
         if ($type == 'notice') {
-            $documents = Document::all();
-            $documents = DB::table('documents')->where('type', '공지사항')->orderBy('id', 'desc')->paginate(10);
+            $query = $query->where('type', '공지사항');
         }
         if ($type == 'news') {
-            $documents = Document::all();
-            $documents = DB::table('documents')->where('type', 'news')->orderBy('id', 'desc')->paginate(10);
+            $query = $query->where('type', 'news');
         }
         if ($type == 'gallery') {
-            // $documents = Document::all();
-            // $documents = DB::table('documents')->where('type', '갤러리')->orderBy('id', 'desc')->paginate(10);
-            return view('community.gallery');
+            $viewName = 'community.gallery';
+            $query = $query->where('type', '갤러리');
         }
+        $documents = $query->paginate(10);
 
-        return view('community.index', compact('documents'));
+        return view($viewName, compact('documents'));
     }
 
     /**
