@@ -1,11 +1,43 @@
 @extends('store.common')
 
 @section('inner')
-    <div class="col-md-12" style="background-color: #eee;">
-        <div class="col-md-6">
-            <div class="col-md-12">
+    <div class="col-md-12 padding-init-0" style="background-color: #eee;">
+        <div class="col-md-6 padding-init-0">
+            <div class="col-md-1"></div>
+            <div class="col-md-11">
                 <h2><p><b>줄리앙 매장</b></p></h2>
                 <p><b>오픈 매장</b></p>
+                <div class="" id="store_find">
+                    <form action="">
+                        <div class="row"><label>지역선택</label>
+                            <select class="pull-right" style="width: 174px; height:40px;">
+                                {{-- <option>전체보기</option>
+                                @foreach ($storeList as $store)
+                                    <option>{{ $store->location }}</option>
+                                @endforeach --}}
+                                <option>전체보기</option>
+                                <option>서울</option>
+                                <option>인천</option>
+                                <option>경기도</option>
+                                <option>강원도</option>
+                                <option>충청북도</option>
+                                <option>세종</option>
+                                <option>대전</option>
+                                <option>충청남도</option>
+                                <option>전라북도</option>
+                                <option>광주</option>
+                                <option>전라남도</option>
+                                <option>경상북도</option>
+                                <option>대구</option>
+                                <option>울산</option>
+                                <option>경상남도</option>
+                                <option>제주도</option>
+                                <option>부산</option>
+                            </select>
+                            <br></div>
+                        <div class="row"><label>지점명/주소검색</label><input type="text" class="pull-right" style="height:40px;"></div>
+                    </form>
+                </div>
             </div>
         </div>
         
@@ -31,6 +63,34 @@
 
             </div>
         </div>
+
+        
     </div>
+    <div id="store_table" class="col-md-12 padding-init-0">
+        <table class="table table-bordered text-center">
+            <thead >
+                <tr>
+                    <th class="text-center" style="width:10%;">지역</th>
+                    <th class="text-center" style="width:30%;">지점명</th>
+                    <th class="text-center" style="width:50%;">주소</th>
+                    <th class="text-center" style="width:10%;">비고</th>
+                </tr>
+            </thead>
+            <tbody>
+                    {{-- <td>지역</td>
+                    <td>지점명</td>
+                    <td>주소</td>
+                    <td>비고</td> --}}
+
+                    {{-- @foreach ($storeList as $store)
+                        <td>{{ $store->location }}</td>
+                        <td>{{ $store-> }}</td>
+                        <td>{{ $store-> }}</td>
+                        <td>{{ $store-> }}</td>
+                    @endforeach --}}
+            </tbody>            
+        </table>
+    </div>
+
 @endsection
 

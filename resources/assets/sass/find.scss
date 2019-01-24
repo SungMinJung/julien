@@ -1,3 +1,32 @@
+#store_find{
+    width:330px;
+    padding:30px;
+    border: 1px solid lightgray;
+    background:#fff;
+    
+    .row{
+        padding-top:10px;
+        padding-bottom:10px;
+        label{
+            font-size:9pt;
+            width:100px;
+            height:40px;
+            vertical-align: center;
+            align-content: center;
+            
+        }
+    }
+}
+#store_table{
+    border-top:2px solid black;
+    margin-top:20px;
+    thead{
+        background-color: #D5D5D5;
+    }
+    tbody{
+        background-color: #eee;;
+    }
+}
 #korea {
     $indexValue: 10;
     div {
@@ -23,7 +52,7 @@
 }
 .busan{
     position: absolute;
-    bottom:110px;
+    bottom:90px;
     left:188px;
     // display:none;
 }
@@ -87,12 +116,12 @@
 }
 .jeonbuk{
     position: absolute;
-    bottom:136px;
+    bottom:116px;
     left:48px;
 }
 .jeonnam{
     position: absolute;
-    bottom:44px;
+    bottom:24px;
     left:14px;
 }
 .sejong{
@@ -107,7 +136,7 @@
 }
 .ulsan{
     position: absolute;
-    bottom:136px;
+    bottom:116px;
     right:229px;
 }
 
@@ -203,7 +232,7 @@
     -ms-transform: translate(-50%, -50%);
 }
 .p-seoul{
-    top: 45%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
