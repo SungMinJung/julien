@@ -16,9 +16,9 @@ class CreateDocumentsTable extends Migration
         Schema::create('documents', function (Blueprint $table) {
             $table->increments('id');
             $table->string('type');     // [notice, gallery, news]
-            $table->string('title');
-            $table->text('content');
-            $table->string('main_image');   // /image/asdfsadf/sadfasfa/sdfas.png
+            $table->string('title')->nullable();
+            $table->text('content')->nullable();
+            $table->string('main_image')->nullable();   // /image/asdfsadf/sadfasfa/sdfas.png
             $table->integer('view_count')->default('0');    // 0
 
             $table->integer('user_id')->unsigned()->nullable();
