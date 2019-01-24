@@ -520,10 +520,6 @@ footer {
   -ms-transform: translate(-50%, -50%);
 }
 
-* {
-  border: 1px solid red;
-}
-
 .inline_div div {
   display: inline;
   font-size: 16pt;
