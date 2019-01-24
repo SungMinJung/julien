@@ -1,6 +1,6 @@
 @extends('story.common')
 
-    <style>
+<style>
     #content{
          color: #919191;
         padding-left: 20px;
@@ -84,11 +84,18 @@
         }
 
     </script>
+
+    
     
 
+    <div id="popup">
+        <img src="" onclick="popup_del()" id="popimg">
+        {{-- <button id="pop1-btn" >제거</button> --}}
+    </div>
 
 
 @section('inner')
+
 
         <div id="content">
     <div class="col-sm-9 border-left" style="margin-top:5%;">
@@ -113,10 +120,10 @@
                     <div class="zoom"><img src="http://julienwaffle.com/wp-content/uploads/2016/05/brand-3-5-705x396.jpg" onclick="popup_show('http://julienwaffle.com/wp-content/uploads/2016/05/brand-3-5-705x396.jpg')" style="width:100%;"></div>
                 </div>
                 <div class="imgbox">
-                    <div class="zoom"><img src="http://julienwaffle.com/wp-content/uploads/2016/05/KakaoTalk_20160709_121304829-397x705.jpg" style="width:100%;"></div>
+                    <div class="zoom"><img src="http://julienwaffle.com/wp-content/uploads/2016/05/KakaoTalk_20160709_121304829-397x705.jpg" onclick="popup_show('http://julienwaffle.com/wp-content/uploads/2016/05/KakaoTalk_20160709_121304829-397x705.jpg')" style="width:100%;"></div>
                 </div>
                 <div class="imgbox">
-                    <div class="zoom"><img src="http://julienwaffle.com/wp-content/uploads/2016/05/KakaoTalk_20160824_113715787-705x397.jpg" style="width:100%;"></div>
+                    <div class="zoom"><img src="http://julienwaffle.com/wp-content/uploads/2016/05/KakaoTalk_20160824_113715787-705x397.jpg" onclick="popup_show('http://julienwaffle.com/wp-content/uploads/2016/05/KakaoTalk_20160824_113715787-705x397.jpg')" style="width:100%;"></div>
                 </div>
                 <div class="imgbox">
                     <div class="zoom"><img src="http://julienwaffle.com/wp-content/uploads/2016/05/KakaoTalk_20160805_135121919-397x705.jpg" style="width:100%;"></div>
@@ -196,3 +203,7 @@
     </div>
     </div>
 @endsection
+
+
+
+

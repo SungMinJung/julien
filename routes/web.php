@@ -63,3 +63,6 @@ Route::group(['prefix'=>'community','as'=>'community.'],function()
 Route::get('/commu/show58',function(){
     return view('community.show58');
 });
+Route::get('gallery2',function(){
+    return view('community.gallery2');
+});
