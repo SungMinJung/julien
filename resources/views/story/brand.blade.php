@@ -51,7 +51,7 @@ a:hover
 
 </style>
 <div id="ex1-content">
-   <div class="col-sm-9 border-left" style="margin-top:5%;">
+   <div class="col-sm-9 border-left" style="margin-top:2%;">
        <div class="row" style="padding:10px;">
            <div class="col-sm-7" style="font-size:13px; color:#666666">
            <img src="http://julienwaffle.com/wp-content/uploads/2016/05/up1.png" alt="">
@@ -85,12 +85,14 @@ a:hover
                <img src="http://julienwaffle.com/wp-content/uploads/2016/05/brand-1-1-300x300.jpg" style="width:100%;height:auto;margin-left:25%;margin-bottom:20px;max-width:300px;float:right;">
            </div>
        </div>
+       <div class="container">
        <div class="row">
            <div class="col-sm-6">
                <div class="zoom">
                    <img src="http://julienwaffle.com/wp-content/uploads/2016/05/brand-1-2.jpg" style="width:100%;">
                </div>
            </div>
+        </div>
            <div class="col-sm-6">
                <div class="zoom">
                    <img src="http://julienwaffle.com/wp-content/uploads/2016/05/brand-1-3.jpg" style="width:100%;">
