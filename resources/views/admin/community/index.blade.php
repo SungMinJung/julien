@@ -1,9 +1,13 @@
-<table>
+@extends('layouts.app')
+
+@section('content')
+    
+<table class="table table-hover" id="admintable">
     <thead>
         <tr>
             <td>번호</td>
-            <td>타입</td>
             <td>제목</td>
+            <td>타입</td>
             <td>작성자</td>
             <td>작성일</td>
             <td></td>
@@ -21,8 +25,8 @@
                     @csrf
                     @method('delete')
                     <td>
-                        <a href="{{ route('docu.edit', $document->id) }}" class="btn btn-default">수정</a>
-                        <button type="submit">삭제</button>
+                        <a href="{{ route('docu.edit', $document->id) }}" class="btn btn-primary">수정</a>
+                        <button type="submit" class="btn btn-danger">삭제</button>
                     </td>
                 </form>
             </tr>
@@ -30,5 +34,11 @@
     </tbody>
 </table>
 
-{{ $documents->render() }}
+<div style="margin-left:35%;">
+    {{ $documents->render() }}
+</div>
+
+<a href="{{ route('docu.create') }}" class="btn btn-primary" id="adminbtn">작성</a>
+
+@endsection
 

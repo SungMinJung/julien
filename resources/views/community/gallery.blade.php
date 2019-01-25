@@ -5,6 +5,10 @@
 }
 #first{
     padding-top: 150px;
+    width: 100%;
+    height: auto;
+    max-width: 750px;
+    min-width: 475px;
 }
 
 .gallery1{
@@ -99,10 +103,12 @@ function popup_del(){
 
     <div class="gallery1" id="horizen">
         <div class="row1" id="hori1">
-            <img class="effect1" src="http://julienwaffle.com/wp-content/uploads/2016/05/KakaoTalk_20180713_165608779.jpg" onclick="popup_show('http://julienwaffle.com/wp-content/uploads/2016/05/KakaoTalk_20180713_165608779.jpg')" alt="">
-            <img class="effect2" src="http://julienwaffle.com/wp-content/uploads/2016/05/KakaoTalk_20180713_165630342-180x180.jpg "onclick="popup_show('http://julienwaffle.com/wp-content/uploads/2016/05/KakaoTalk_20180713_165630342-180x180.jpg')"  alt="">
+            @foreach ($documents as $document)
+                <img class="effect1" src="{{ $documents->main_image }}" onclick="popup_show('{{ $documents->main_image }}')" alt="">
+            @endforeach
+            {{-- <img class="effect2" src="http://julienwaffle.com/wp-content/uploads/2016/05/KakaoTalk_20180713_165630342-180x180.jpg "onclick="popup_show('http://julienwaffle.com/wp-content/uploads/2016/05/KakaoTalk_20180713_165630342-180x180.jpg')"  alt="">
             <img class="effect3" src="http://julienwaffle.com/wp-content/uploads/2016/05/11-1-180x180.jpg"  onclick="popup_show('http://julienwaffle.com/wp-content/uploads/2016/05/11-1-180x180.jpg')" alt="">
-            <img class="effect4" src="http://julienwaffle.com/wp-content/uploads/2016/05/00-180x180.jpg"  onclick="popup_show('http://julienwaffle.com/wp-content/uploads/2016/05/00-180x180.jpg')" width="100%"  alt="">
+            <img class="effect4" src="http://julienwaffle.com/wp-content/uploads/2016/05/00-180x180.jpg"  onclick="popup_show('http://julienwaffle.com/wp-content/uploads/2016/05/00-180x180.jpg')" width="100%"  alt=""> --}}
          </div>
 
         <div class="row2" id="hori2">

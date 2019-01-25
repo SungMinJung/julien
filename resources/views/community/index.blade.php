@@ -16,6 +16,10 @@
 #img{
     /* margin-top: 50px; */
     padding-top:150px;
+    width: 100%;
+    height: auto;
+    max-width: 750px;
+    min-width: 475px;
 }
 #notice {
     border: 2px solid #979797;
