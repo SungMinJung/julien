@@ -3,6 +3,7 @@ import { runInContext } from "vm";
 $(document).ready(function(){
     var left = 200;
     var top = 200;
+    
     $('.popup').each(function(index){
         $(this).css('left',left);
         $(this).css('top',top);
@@ -29,4 +30,18 @@ $(document).ready(function(){
         //     console.log(index);
         // })
     })
+    console.log('test');
+    function popup_show(imgurl)
+    {
+        $("#popimg").attr("src", imgurl);
+        
+        $("#popup").css("background-color","rgba( 000, 000, 000, 0.5 )");
+        $("#popup").css("display","block");
+    }
+    
+    function popup_del(){
+        $("#popup").css("background-color","#fff");
+        $("#popup").css("display","none");
+    
+    }
 })

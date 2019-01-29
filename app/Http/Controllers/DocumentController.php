@@ -6,6 +6,7 @@ use App\Document;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Traits\UploadTrait;
+use App\Gallery;
 
 class DocumentController extends Controller
 {
@@ -19,7 +20,7 @@ class DocumentController extends Controller
     public function index($type)
     {
         $query = Document::orderBy('id', 'desc');
-
+        $img = Gallery::all();
         $viewName = 'community.index';
 
         if ($type == '공지사항') {
@@ -36,8 +37,7 @@ class DocumentController extends Controller
             $imgUrl = "http://julienwaffle.com/wp-content/uploads/2016/05/up18.png";
         }
         $documents = $query;
-
-        return view($viewName, compact('documents', 'imgUrl'));
+        return view($viewName, compact('documents', 'imgUrl','img'));
     }
 
     /**
