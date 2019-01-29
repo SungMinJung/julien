@@ -37,6 +37,16 @@ Route::group(['prefix'=>'franchise','as'=>'franchise.'], function()
     Route::get('explain','FranchiseController@explain')->name('explain');
 
 });
+// 프랜차이즈어드민
+Route::get('/adminfran', 'FranchiseController@index')->name('fran.admin');
+Route::get('/adminfran/create', 'FranchiseController@create')->name('fran.create');
+Route::post('/adminfran', 'FranchiseController@store')->name('fran.store');
+Route::get('/adminfran/{id}', 'FranchiseController@show')->name('fran.show');
+Route::get('/adminfran/{id}/edit', 'FranchiseController@edit')->name('fran.edit');
+Route::put('/adminfran{id}', 'FranchiseController@update')->name('fran.update');
+Route::delete('/adminfran{id}', 'FranchiseController@destroy')->name('fran.destroy');
+
+
 Route::group(['prefix'=>'store','as'=>'store.'],function()
 {
     Route::get('success','StoreController@success')->name('success');
@@ -59,13 +69,13 @@ Route::group(['prefix'=>'community','as'=>'community.'],function()
     
 });
 // 커뮤니티어드민
-Route::get('/admin', 'DocumentController@admin')->name('docu.admin');
-Route::get('/admin/create', 'DocumentController@create')->name('docu.create');
-Route::post('/admin', 'DocumentController@store')->name('docu.store');
-Route::get('/admin/{id}', 'DocumentController@adshow')->name('docu.adshow');
-Route::get('/admin/{id}/edit', 'DocumentController@edit')->name('docu.edit');
-Route::put('/admin/{id}', 'DocumentController@update')->name('docu.update');
-Route::delete('/admin/{id}', 'DocumentController@destroy')->name('docu.destroy');
+Route::get('/admindocu', 'DocumentController@admin')->name('docu.admin');
+Route::get('/admindocu/create', 'DocumentController@create')->name('docu.create');
+Route::post('/admindocu', 'DocumentController@store')->name('docu.store');
+Route::get('/admindocu/{id}', 'DocumentController@adshow')->name('docu.adshow');
+Route::get('/admindocu/{id}/edit', 'DocumentController@edit')->name('docu.edit');
+Route::put('/admindocu/{id}', 'DocumentController@update')->name('docu.update');
+Route::delete('/admindocu/{id}', 'DocumentController@destroy')->name('docu.destroy');
 
 
 Route::get('/commu/show58',function(){
