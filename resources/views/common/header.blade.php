@@ -29,7 +29,7 @@
                             </a>
                         
                             <ul class="dropdown-menu menu-size border-top-red ">
-                                <li><a href="{{route('franchise.competitive')}}"></a></li>
+                                <li><a href="{{route('franchise.competitive')}}">성공창업 경쟁력</a></li>
                                 <li><a href="{{route('franchise.join')}}">가맹안내</a></li>
                                 <li><a href="{{route('franchise.cost')}}">투자비용</a></li>
                                 <li><a href="{{route('franchise.guide')}}">가맹문의</a></li>

@@ -37,8 +37,8 @@
 <div style="margin-left:35%;">
     {{ $documents->render() }}
 </div>
-
-<a href="{{ route('docu.create') }}" class="btn btn-primary" id="adminbtn">작성</a>
-
+<div class="row text-center">
+    <a href="{{ route('docu.create') }}" class="btn btn-primary" id="adminbtn">작성</a>
+</div>
 @endsection
 
